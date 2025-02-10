@@ -13,6 +13,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -70,7 +71,8 @@ fun TasksCompletedPage(title: String, encourage: String, modifier: Modifier = Mo
     val checkMarkImage = painterResource(R.drawable.ic_task_completed)
     Column(
         verticalArrangement = Arrangement.Center,
-        modifier = Modifier
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier.fillMaxSize()
     ) {
         Image(
             painter = checkMarkImage,
