@@ -47,6 +47,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun PageText(title: String, encourage: String, modifier: Modifier = Modifier) {
     Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
     ) {
         Text(
